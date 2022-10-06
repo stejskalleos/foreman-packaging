@@ -1,11 +1,8 @@
-# FIXME:
-#   1. Edit foreman requirement(s) and specify minimum version
-#   2. Delete these lines
-#
 # template: foreman_plugin
+
 %global gem_name foreman_google
 %global plugin_name google
-%global foreman_min_version FIXME
+%global foreman_min_version 3.5.0
 
 Name: rubygem-%{gem_name}
 Version: 0.0.1
@@ -30,15 +27,15 @@ BuildRequires: rubygem(google-cloud-compute) < 1
 # end specfile generated dependencies
 
 # start package.json devDependencies BuildRequires
-BuildRequires: npm(@babel/core) >= 7.7.0
-BuildRequires: npm(@babel/core) < 8.0.0
-BuildRequires: npm(@theforeman/builder) >= 6.0.0
-BuildRequires: npm(@theforeman/builder) < 7.0.0
+# BuildRequires: npm(@babel/core) >= 7.7.0
+# BuildRequires: npm(@babel/core) < 8.0.0
+# BuildRequires: npm(@theforeman/builder) >= 6.0.0
+# BuildRequires: npm(@theforeman/builder) < 7.0.0
 # end package.json devDependencies BuildRequires
 
 # start package.json dependencies BuildRequires
-BuildRequires: npm(react-intl) >= 2.8.0
-BuildRequires: npm(react-intl) < 3.0.0
+# BuildRequires: npm(react-intl) >= 2.8.0
+# BuildRequires: npm(react-intl) < 3.0.0
 # end package.json dependencies BuildRequires
 
 %description
